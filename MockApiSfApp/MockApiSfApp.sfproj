@@ -35,6 +35,9 @@
     <ProjectReference Include="..\src\MdmDataDistributeApi\MdmDataDistributeApi.csproj">
       <ServiceLaunchUrl>http://{MachineName}:{ServicePort}/api/values</ServiceLaunchUrl>
     </ProjectReference>
+    <ProjectReference Include="..\src\SmsService\SmsService.csproj">
+      <ServiceLaunchUrl>http://{MachineName}:{ServicePort}/api/values</ServiceLaunchUrl>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
   <PropertyGroup>

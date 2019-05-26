@@ -10,10 +10,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AppsOnSF.Common.Options" Version="1.0.4" />
+    <PackageReference Include="Base.Csi.Sms.MsgContracts" Version="1.0.0" />
+    <PackageReference Include="MassTransit.AspNetCore" Version="5.3.2" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="5.3.2" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
-    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="3.3.654" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
+    <PackageReference Include="Microsoft.ServiceFabric.AspNetCore.Kestrel" Version="3.3.658.0" />
+    <PackageReference Include="ServiceFabric.Contrib.ConfigurationProvider" Version="1.0.18" />
   </ItemGroup>
 
 </Project>
