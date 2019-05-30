@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="MockApiType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="MockApiType" ApplicationTypeVersion="1.0.1" xmlns="http://schemas.microsoft.com/2011/01/fabric">
   <Parameters>
     <Parameter Name="SmsService_ASPNETCORE_ENVIRONMENT" DefaultValue="" />
-    <Parameter Name="SmsService_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="SmsService_InstanceCount" DefaultValue="1" />
     <Parameter Name="MdmDataDistributeApi_ASPNETCORE_ENVIRONMENT" DefaultValue="" />
-    <Parameter Name="MdmDataDistributeApi_InstanceCount" DefaultValue="-1" />
+    <Parameter Name="MdmDataDistributeApi_InstanceCount" DefaultValue="1" />
     <Parameter Name="RabbitMQ_HostAddress" DefaultValue="rabbitmq://localhost/" />
     <Parameter Name="RabbitMQ_Username" DefaultValue="guest" />
     <Parameter Name="RabbitMQ_Password" DefaultValue="guest" />
@@ -30,7 +30,7 @@
     </EnvironmentOverrides>
   </ServiceManifestImport>
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="MdmDataDistributeApiPkg" ServiceManifestVersion="1.0.0" />
+    <ServiceManifestRef ServiceManifestName="MdmDataDistributeApiPkg" ServiceManifestVersion="1.0.1" />
     <ConfigOverrides />
     <EnvironmentOverrides CodePackageRef="code">
       <EnvironmentVariable Name="ASPNETCORE_ENVIRONMENT" Value="[MdmDataDistributeApi_ASPNETCORE_ENVIRONMENT]" />

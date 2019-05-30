@@ -1,10 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/MockApi" xmlns="http://schemas.microsoft.com/2011/01/fabric">
-  <Parameters>
-    <Parameter Name="SmsService_InstanceCount" Value="-1" />
-    <Parameter Name="MdmDataDistributeApi_InstanceCount" Value="-1" />
-    <Parameter Name="RabbitMQ_HostAddress" Value="rabbitmq://10.0.0.7/" />
-    <Parameter Name="RabbitMQ_Username" Value="public" />
-    <Parameter Name="RabbitMQ_Password" Value="public" />
-  </Parameters>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/Mock" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <Parameters />
 </Application>
